@@ -6,10 +6,10 @@ void main() {
   int cold = 0;
   int? temperature;
 
-  for(int i = 1; i <=7 ; i++) {
+  for (int i = 1; i <= 7; i++) {
     print('Enter temperature for the day: ');
     temperature = int.parse(stdin.readLineSync()!);
-    if(temperature > 20) {
+    if (temperature > 20) {
       print("It's warm today!");
       warm++;
     } else if (temperature >= 10 && temperature <= 20) {
@@ -25,5 +25,4 @@ void main() {
   print("Cool days: $cool");
   print("Cold days: $cold");
   print("Weekly temperature analysis completed.");
-  
 }
